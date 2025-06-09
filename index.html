@@ -21,24 +21,110 @@
     </nav>
   </header>
 
-  <section style="background: url('https://images.unsplash.com/photo-1521790360289-ff20c7d5b1e2') center/cover no-repeat; padding:100px 20px;text-align:center;position:relative;">
-  <div style="background-color:rgba(255,255,255,0.85); padding:40px; border-radius:12px; display:inline-block; animation: fadeIn 1.5s ease-in-out;">
-    <h1 style="font-family:'Montserrat', sans-serif;font-size:42px;color:#2e7d32;margin-bottom:10px;">Your Success is Our Commitment</h1>
-    <p style="font-size:18px;color:#333;max-width:700px;margin:0 auto 30px auto;">We provide expert IT professionals across mobile, backend, frontend, cloud, data & AI. Let's partner to achieve your goals efficiently and ethically.</p>
-    <a href="#contact" style="display:inline-block;padding:14px 28px;font-size:18px;background:#2e7d32;color:#fff;border-radius:6px;text-decoration:none;transition:all 0.3s ease;">Get in Touch</a>
+  <div class="swiper" style="width:100%;height:500px;">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide" style="background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat; display:flex;align-items:center;justify-content:center;">
+      <div style="background-color:rgba(255,255,255,0.92); padding:40px; border-radius:12px; display:inline-block; animation: fadeIn 1.5s ease-in-out; max-width: 800px;">
+        <h1 style="font-family:'Montserrat', sans-serif;font-size:42px;color:#2e7d32;margin-bottom:10px;">Your Success is Our Commitment</h1>
+        <p style="font-size:18px;color:#2c3e50;margin:0 auto 30px auto;">We provide expert IT professionals across mobile, backend, frontend, cloud, data & AI. Let's partner to achieve your goals efficiently and ethically.</p>
+        <a href="#contact" style="display:inline-block;padding:14px 28px;font-size:18px;background:#2e7d32;color:#fff;border-radius:6px;text-decoration:none;transition:all 0.3s ease;">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="swiper-slide" style="background: url('https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat; display:flex;align-items:center;justify-content:center;">
+      <div style="background-color:rgba(255,255,255,0.92); padding:40px; border-radius:12px; display:inline-block; animation: fadeIn 1.5s ease-in-out; max-width: 800px;">
+        <h1 style="font-family:'Montserrat', sans-serif;font-size:42px;color:#2e7d32;margin-bottom:10px;">Expert IT Talent</h1>
+        <p style="font-size:18px;color:#2c3e50;margin:0 auto 30px auto;">We deliver in 24h–1 week. Specialized in sourcing IT talent tailored to your needs.</p>
+        <a href="#contact" style="display:inline-block;padding:14px 28px;font-size:18px;background:#2e7d32;color:#fff;border-radius:6px;text-decoration:none;transition:all 0.3s ease;">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="swiper-slide" style="background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat; display:flex;align-items:center;justify-content:center;">
+      <div style="background-color:rgba(255,255,255,0.92); padding:40px; border-radius:12px; display:inline-block; animation: fadeIn 1.5s ease-in-out; max-width: 800px;">
+        <h1 style="font-family:'Montserrat', sans-serif;font-size:42px;color:#2e7d32;margin-bottom:10px;">Your Success Partner</h1>
+        <p style="font-size:18px;color:#2c3e50;margin:0 auto 30px auto;">Beyond staffing — we focus on building long-term, strategic partnerships.</p>
+        <a href="#contact" style="display:inline-block;padding:14px 28px;font-size:18px;background:#2e7d32;color:#fff;border-radius:6px;text-decoration:none;transition:all 0.3s ease;">Start a Conversation</a>
+      </div>
+    </div>
   </div>
-</section>
+  <div class="swiper-pagination"></div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    }
+  });
+</script>
+
 
 <style>
 @keyframes fadeIn {
   from {opacity: 0; transform: translateY(20px);}
   to {opacity: 1; transform: translateY(0);}
 }
+body {
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  font-family: 'Open Sans', sans-serif;
+}
+header {
+  background-color: #ffffff;
+  color: #2c3e50;
+  border-bottom: 2px solid #2e7d32;
+}
+footer {
+  background-color: #2e7d32;
+  color: #ffffff;
+}
+a {
+  color: #2e7d32;
+}
+a:hover {
+  color: #145a32;
+}
+section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.box h3 {
+  color: #2c3e50;
+}
+.box:hover {
+  box-shadow: 0 8px 16px rgba(46,125,50,0.2);
+  transform: translateY(-5px);
+}
+.cta-button, .box a {
+  background-color: #2e7d32;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover, .box a:hover {
+  background-color: #145a32;
+}
 </style>
 
-  <section id="about" style="padding:60px 20px;text-align:center;max-width:900px;margin:auto;">
+
+
+  <section id="about" style="padding:60px 20px;text-align:center;margin:auto;">
     <h2 style="font-family:'Montserrat', sans-serif;font-size:32px;color:#2e7d32;">About DevThal</h2>
-    <p>At DevThal, we provide highly vetted, expert IT engineers and professionals across a wide range of technologies and domains. Our mission is to be your success partner by delivering top-notch talent smoothly and transparently.</p>
+    <p style="text-align:center;margin:auto;max-width:1200px;">At DevThal, we provide highly vetted, expert IT engineers and professionals across a wide range of technologies and domains. Our mission is to be your success partner by delivering top-notch talent smoothly and transparently.</p>
   </section>
 
   <section id="services" style="padding:60px 20px;background:#e8f5e9;">
