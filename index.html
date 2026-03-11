@@ -1,204 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DevThal - Your success is our commitment</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<title>Devthal Innovations</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-<body style="margin:0;font-family:'Open Sans', sans-serif;background-color:#f9f9f9;color:#222;">
-  <header style="background:#ffffff;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid #2e7d32;">
-    <div>
-      <div style="font-family:'Montserrat', sans-serif;font-size:32px;font-weight:700;color:#2e7d32;">DevThal</div>
-      <div style="font-style:italic;font-size:16px;color:#555;">Your success is our commitment</div>
-    </div>
-    <nav>
-      <a href="#about" style="margin-left:20px;text-decoration:none;color:#2e7d32;font-weight:600;">About</a>
-      <a href="#services" style="margin-left:20px;text-decoration:none;color:#2e7d32;font-weight:600;">Services</a>
-      <a href="#values" style="margin-left:20px;text-decoration:none;color:#2e7d32;font-weight:600;">Values</a>
-      <a href="#contact" style="margin-left:20px;text-decoration:none;color:#2e7d32;font-weight:600;">Contact</a>
-    </nav>
-  </header>
 
-  <div class="swiper" style="width:100%;height:500px;">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide" style="background: url('https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat; display:flex;align-items:center;justify-content:center;">
-      <div style="background-color:rgba(255,255,255,0.92); padding:40px; border-radius:12px; display:inline-block; animation: fadeIn 1.5s ease-in-out; max-width: 800px;">
-        <h1 style="font-family:'Montserrat', sans-serif;font-size:42px;color:#2e7d32;margin-bottom:10px;">Your Success is Our Commitment</h1>
-        <p style="font-size:18px;color:#2c3e50;margin:0 auto 30px auto;">We provide expert IT professionals across mobile, backend, frontend, cloud, data & AI. Let's partner to achieve your goals efficiently and ethically.</p>
-        <a href="#contact" style="display:inline-block;padding:14px 28px;font-size:18px;background:#2e7d32;color:#fff;border-radius:6px;text-decoration:none;transition:all 0.3s ease;">Get in Touch</a>
-      </div>
-    </div>
+<body>
 
-    <div class="swiper-slide" style="background: url('https://images.unsplash.com/photo-1596495577886-d920f1fb7238?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat; display:flex;align-items:center;justify-content:center;">
-      <div style="background-color:rgba(255,255,255,0.92); padding:40px; border-radius:12px; display:inline-block; animation: fadeIn 1.5s ease-in-out; max-width: 800px;">
-        <h1 style="font-family:'Montserrat', sans-serif;font-size:42px;color:#2e7d32;margin-bottom:10px;">Expert IT Talent</h1>
-        <p style="font-size:18px;color:#2c3e50;margin:0 auto 30px auto;">We deliver in 24h–1 week. Specialized in sourcing IT talent tailored to your needs.</p>
-        <a href="#contact" style="display:inline-block;padding:14px 28px;font-size:18px;background:#2e7d32;color:#fff;border-radius:6px;text-decoration:none;transition:all 0.3s ease;">Contact Us</a>
-      </div>
-    </div>
+<div class="navbar">
+<div class="logo">Devthal</div>
 
-    <div class="swiper-slide" style="background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat; display:flex;align-items:center;justify-content:center;">
-      <div style="background-color:rgba(255,255,255,0.92); padding:40px; border-radius:12px; display:inline-block; animation: fadeIn 1.5s ease-in-out; max-width: 800px;">
-        <h1 style="font-family:'Montserrat', sans-serif;font-size:42px;color:#2e7d32;margin-bottom:10px;">Your Success Partner</h1>
-        <p style="font-size:18px;color:#2c3e50;margin:0 auto 30px auto;">Beyond staffing — we focus on building long-term, strategic partnerships.</p>
-        <a href="#contact" style="display:inline-block;padding:14px 28px;font-size:18px;background:#2e7d32;color:#fff;border-radius:6px;text-decoration:none;transition:all 0.3s ease;">Start a Conversation</a>
-      </div>
-    </div>
-  </div>
-  <div class="swiper-pagination"></div>
+<div class="nav-links">
+<a href="products.html">Products</a>
+<a href="platform.html">Platform</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</div>
 </div>
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper('.swiper', {
-    loop: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true
-    }
-  });
-</script>
+<section class="hero">
+
+<h1>Building Digital Platforms That Connect People</h1>
+
+<p>
+Devthal Innovations builds scalable technology platforms for communities,
+businesses, and digital ecosystems.
+</p>
+
+<a class="btn" href="products.html">Explore Products</a>
+
+</section>
 
 
-<style>
-@keyframes fadeIn {
-  from {opacity: 0; transform: translateY(20px);}
-  to {opacity: 1; transform: translateY(0);}
-}
-body {
-  background-color: #f8f9fa;
-  color: #2c3e50;
-  font-family: 'Open Sans', sans-serif;
-}
-header {
-  background-color: #ffffff;
-  color: #2c3e50;
-  border-bottom: 2px solid #2e7d32;
-}
-footer {
-  background-color: #2e7d32;
-  color: #ffffff;
-}
-a {
-  color: #2e7d32;
-}
-a:hover {
-  color: #145a32;
-}
-section {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-.box h3 {
-  color: #2c3e50;
-}
-.box:hover {
-  box-shadow: 0 8px 16px rgba(46,125,50,0.2);
-  transform: translateY(-5px);
-}
-.cta-button, .box a {
-  background-color: #2e7d32;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  padding: 12px 20px;
-  transition: background-color 0.3s ease;
-}
-.cta-button:hover, .box a:hover {
-  background-color: #145a32;
-}
-</style>
+<section class="section">
 
+<h2>Our Vision</h2>
 
+<p style="max-width:700px">
+Devthal is focused on building a portfolio of digital products that solve
+real-world problems using modern scalable technology.
+</p>
 
-  <section id="about" style="padding:60px 20px;text-align:center;margin:auto;">
-    <h2 style="font-family:'Montserrat', sans-serif;font-size:32px;color:#2e7d32;">About DevThal</h2>
-    <p style="text-align:center;margin:auto;max-width:1200px;">At DevThal, we provide highly vetted, expert IT engineers and professionals across a wide range of technologies and domains. Our mission is to be your success partner by delivering top-notch talent smoothly and transparently.</p>
-  </section>
+</section>
 
-  <section id="services" style="padding:60px 20px;background:#e8f5e9;">
-    <h2 style="text-align:center;font-family:'Montserrat', sans-serif;font-size:32px;color:#2e7d32;">Our Services</h2>
-    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;max-width:1000px;margin:auto;">
-      <div style="background:#ffffff;padding:20px;border-radius:10px;width:220px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-		  <img src="https://img.icons8.com/ios/50/000000/source-code.png" alt="Frontend" style="width:36px;height:36px;"/>
-		  <h3 style="font-size:18px;">Frontend & Backend Engineers</h3>
-		</div>
-		<div style="background:#ffffff;padding:20px;border-radius:10px;width:220px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-		  <img src="https://img.icons8.com/ios/50/000000/cloud.png" alt="Cloud" style="width:36px;height:36px;"/>
-		  <h3 style="font-size:18px;">Cloud Experts (AWS, Azure, GCP)</h3>
-		</div>
-		<div style="background:#ffffff;padding:20px;border-radius:10px;width:220px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-		  <img src="https://img.icons8.com/ios/50/000000/smartphone.png" alt="Mobile" style="width:36px;height:36px;"/>
-		  <h3 style="font-size:18px;">Mobile Developers (iOS & Android)</h3>
-		</div>
-		<div style="background:#ffffff;padding:20px;border-radius:10px;width:220px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-		  <img src="https://img.icons8.com/ios/50/000000/combo-chart.png" alt="Data" style="width:36px;height:36px;"/>
-		  <h3 style="font-size:18px;">Data & AI Engineers</h3>
-		</div>
-		<div style="background:#ffffff;padding:20px;border-radius:10px;width:220px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-		  <img src="https://img.icons8.com/ios/50/000000/manager.png" alt="Product Owner" style="width:36px;height:36px;"/>
-		  <h3 style="font-size:18px;">Product Owners & Scrum Masters</h3>
-		</div>
-    </div>
-  </section>
-
-  <section id="values" style="padding:60px 20px;">
-    <h2 style="text-align:center;font-family:'Montserrat', sans-serif;font-size:32px;color:#2e7d32;">Our Values</h2>
-    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;max-width:1000px;margin:auto;">
-      <div style="background:#ffffff;padding:20px;border-radius:10px;width:220px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-  <img src="https://img.icons8.com/ios/50/000000/target.png" alt="Expertise" style="width:36px;height:36px;"/>
-  <h3 style="font-size:18px;">Expertise & Quality</h3>
-</div>
-<div style="background:#ffffff;padding:20px;border-radius:10px;width:220px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-  <img src="https://img.icons8.com/ios/50/000000/clock.png" alt="Fast" style="width:36px;height:36px;"/>
-  <h3 style="font-size:18px;">Fast Turnaround</h3>
-</div>
-<div style="background:#ffffff;padding:20px;border-radius:10px;width:220px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-  <img src="https://img.icons8.com/ios/50/000000/handshake.png" alt="Partnership" style="width:36px;height:36px;"/>
-  <h3 style="font-size:18px;">Long-Term Partnerships</h3>
-</div>
-<div style="background:#ffffff;padding:20px;border-radius:10px;width:220px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-  <img src="https://img.icons8.com/ios/50/000000/inspection.png" alt="Verification" style="width:36px;height:36px;"/>
-  <h3 style="font-size:18px;">Background Verification</h3>
-</div>
-<div style="background:#ffffff;padding:20px;border-radius:10px;width:220px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-  <img src="https://img.icons8.com/ios/50/000000/agreement.png" alt="Compliance" style="width:36px;height:36px;"/>
-  <h3 style="font-size:18px;">Ethical & Legal Compliance</h3>
-</div>
-    </div>
-  </section>
-
-  <section id="contact" style="padding:60px 20px;text-align:center;background:#e8f5e9;">
-    <h2 style="font-family:'Montserrat', sans-serif;font-size:32px;color:#2e7d32;">Contact Us</h2>
-    <p style="font-size:16px;">We'd love to hear from you! Reach out with any inquiries.</p>
-    <p style="font-size:16px;">Email: <a href="mailto:consultant@devthal.com" style="color:#2e7d32;text-decoration:none;">consultant@devthal.com</a></p>
-    <p style="font-size:16px;">Phone: +1-980-300-5486</p>
-  </section>
-
-  <footer style="background:#222;color:#fff;text-align:center;padding:20px;font-size:14px;">
-    <p>&copy; 2025 DevThal. All rights reserved.</p>
-  </footer>
-
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper', {
-      loop: true,
-      autoplay: { delay: 4000, disableOnInteraction: false },
-      pagination: { el: '.swiper-pagination', clickable: true },
-      effect: 'fade',
-      fadeEffect: { crossFade: true }
-    });
-  </script>
+<footer>
+© Devthal Innovations Private Limited
+</footer>
+<script src="js/script.js"></script>
 </body>
 </html>
